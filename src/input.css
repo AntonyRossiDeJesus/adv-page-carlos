@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: white;
+}
+
+@layer components {
+  #whatsapp-btn {
+    opacity: 0.2;
+    transform: translateY(110%);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+}
+
+#whatsapp-btn.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.button-primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 16px;
+  border-radius: 25px;
+  background-image: linear-gradient(to right, #ebcf7f, #c39157);
+}
+
+.box-shadown-sec-tree {
+  box-shadow: 4px 4px 8px #9f9370;
+}
+
+.border-radius-sec-for {
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
+}
+
+.border-radius-sec-for2 {
+  border-top-left-radius: 45px;
+  border-bottom-right-radius: 45px;
+}
+
+.item-acordeao {
+  margin: 1.2rem 0;
+  cursor: pointer;
+}
+
+.cabecalho-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  min-height: 80px;
+  padding: 16px 16px;
+  background: linear-gradient(to right, #000, #39030300);
+}
+.img-seta {
+  max-width: 16px;
+  max-height: 16px;
+}
+
+.cabecalho-item--reverse {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  min-height: 80px;
+  padding: 16px 16px;
+  background: linear-gradient(to left, #000, #39030300);
+}
+
+.img-seta {
+  text-align: center;
+  max-width: 16px;
+  max-height: 16px;
+}
+
+.aberto .cabecalho-item {
+  background: linear-gradient(to right, #000, #39030300);
+  color: #ebcf7f;
+}
+
+.aberto .cabecalho-item--reverse {
+  background: linear-gradient(to left, #000, #39030300);
+  color: #ebcf7f;
+}
+
+.corpo-item {
+  display: none;
+  padding: 16px 16px;
+  color: white;
+  background: linear-gradient(to right, #000, #39030300);
+}
+
+.corpo-item--reverse {
+  display: none;
+  padding: 16px 16px;
+  color: white;
+  background: linear-gradient(to left, #000, #39030300);
+}
+
+.aberto .corpo-item {
+  display: block;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #ebcf7f, #c39157);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #ebcf7f, #c39157);
+}
+
+scrollbar-width: thin;
+scrollbar-color: #ebcf7f #000;
